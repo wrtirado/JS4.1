@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="js41app">
+  <head>
+    <meta charset="utf-8">
+    <title>JS4_1</title>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.js"></script>
+    <script type="text/javascript" src="JS4_1.js"></script>
+    <link rel="stylesheet" href="JS4_1.css">
+  </head>
+  <body ng-controller="js41Controller as js41">
+    <!-- JS4.1 button that shows an h1 tag -->
+    <button class="button" ng-click="showHideText()" type="button" name="button">Show Text</button>
+    <h1 ng-show="textIsVisible">Boom</h1>
+    <!-- JS4.1 button that shows an unordered list with three list items -->
+    <button class="button" ng-click="showHideList()" type="button" name="button2">Show Unordered List</button>
+    <ul ng-show="unorderedListIsVisible">
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+
+  </body>
+</html>
