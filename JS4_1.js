@@ -25,5 +25,55 @@
       $scope.showHideList = function(){
         $scope.unorderedListIsVisible = !$scope.unorderedListIsVisible
       }
+      // function that turns adds class: colorPink when mouse hovers over a specific
+      //paragraph
+      $scope.paragraphPink = function(){
+        angular.element(event.target).addClass("colorPink")
+      }
+      // function that turns remove class: colorPink when mouse hovers over a specific
+      //paragraph
+      $scope.paragraphNoPink = function(){
+        angular.element(event.target).removeClass("colorPink")
+      }
+      // function that adds an "!" to the end of all h1 tags
+      $scope.addExclamation = function(){
+        event.target.innerHTML += "!"
+        console.log("addExclamation");
+      }
+      // function that will confirm whether or not the user really wants to navigate
+      // that URL.
+      $scope.urlConfirm = function(){
+        if()
+      }
+
+
+
+
+
+      // Part II
+
+      // Create an HTML page with some filler content including some paragraphs,
+      // headings, and links.
+      //
+      // When a paragraph is moused over, turn the text of that paragraph pink.
+      //
+      // Add an exclamation point to the end of each heading.
+      //
+      // When a link is clicked, confirm that the user wants to navigate to that url.
+      // If the user clicks OK, allow the default behavior of the link to be
+      // executed. If the user clicks cancel, cancel the default browser behavior
+      // by calling event.preventDefault() on the event object.
+      //
+      // When a link is clicked and the user chooses not to go to the url, remove the link from the DOM.
     }
+
+
+
+
+
+
+
+
+
+
 } ())

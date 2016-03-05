@@ -15,9 +15,33 @@
     <button class="button" ng-click="showHideList()" type="button" name="button2">Show Unordered List</button>
     <ul ng-show="unorderedListIsVisible">
       <li>One</li>
-      <li>Two</li>
       <li>Three</li>
+      <li>Two</li>
     </ul>
+
+    <h1 ng-mouseover="addExclamation()">Part Two</h1>
+    <p ng-mouseover="paragraphPink()" ng-mouseleave="paragraphNoPink()">Part II
+      Create an HTML page with some filler content including some paragraphs,
+      headings, and links.</p>
+
+      <p ng-mouseover="paragraphPink()" ng-mouseleave="paragraphNoPink()">When a paragraph is moused over, turn the text of that
+      paragraph pink.</p>
+
+      <p ng-mouseover="paragraphPink()" ng-mouseleave="paragraphNoPink()">Add an exclamation point to the end of each heading.</p>
+
+      <p ng-mouseover="paragraphPink()" ng-mouseleave="paragraphNoPink()">When a link is clicked, confirm that the user wants to navigate to that
+      url. If the user clicks OK, allow the default behavior of the link to be
+      executed. If the user clicks cancel, cancel the default browser behavior
+      by calling event.preventDefault() on the event object.</p>
+
+      <p ng-mouseover="paragraphPink()" ng-mouseleave="paragraphNoPink()">When a link is clicked and the user chooses not to go to the url, remove the link from the DOM.</p>
+    <h1 ng-mouseover="addExclamation()">Link to the student site where these paragraphs are pulled from</h1>
+    <a ng-click="urlConfirm" href="https://ru-student-portal.herokuapp.com/#/assignment/56ce2c3fac3e6e4adb7d817f">Student Site</a>
+
+
+
+
+
 
   </body>
 </html>

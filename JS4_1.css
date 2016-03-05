@@ -1,3 +1,7 @@
 .button {
   display: block;
 }
+
+.colorPink {
+  color: pink;
+}
